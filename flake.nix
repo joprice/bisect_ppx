@@ -37,19 +37,9 @@
     rec {
       devShells.default = pkgs.mkShell {
         buildInputs = [
-          alcotest
-          alcotest-lwt
-          dream
-          fmt
-          lwt
-          lwt_ppx
-          melange-webapi
           ocamlPackages.melange
-          ocaml_pcre
           ppxlib
-          reason-react
           uri
-          reason-native.console
           js_of_ocaml-compiler
         ];
         nativeBuildInputs = [
@@ -58,7 +48,6 @@
           ocaml-lsp
           reason
           dune_3
-          reason-native.refmterr
           ocamlformat
         ];
         OCAMLRUNPARAM = "b";
