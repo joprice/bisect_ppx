@@ -2,4 +2,5 @@
  (name bisect_native)
  (public_name bisect_ppx.runtime)
  (synopsis "Bisect_ppx runtime library (internal)")
+ ;(wrapped false)
  (libraries bisect_ppx.common unix))
