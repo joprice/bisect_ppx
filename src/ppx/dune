@@ -16,7 +16,7 @@
  (name bisect_ppx_melange)
  (public_name bisect_ppx.melange)
  (kind ppx_rewriter)
- (instrumentation.backend (ppx bisect_ppx))
+ (instrumentation.backend (ppx bisect_ppx.melange))
  (synopsis "Code coverage for OCaml")
  (modules)
  (ppx_runtime_libraries bisect_ppx.runtime_melange)
