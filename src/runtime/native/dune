@@ -1,5 +1,8 @@
 (library
  (name bisect_native)
+ (modules bisect)
+ ;(private_modules runtime)
+ (wrapped false)
  (public_name bisect_ppx.runtime)
  (synopsis "Bisect_ppx runtime library (internal)")
  ;(wrapped false)
