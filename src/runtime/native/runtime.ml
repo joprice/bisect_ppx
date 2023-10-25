@@ -118,7 +118,7 @@ let dump_counters_exn channel =
 
 let dump () =
   match Sys.backend_type with
-  | Sys.Other ("js_of_ocaml" | "BS") ->
+  | Sys.Other "js_of_ocaml" ->
     (* The dump function is a no-op when running a js_of_ocaml-compiled binary,
        as the Unix file-manipulating functions will not be present; instead, the
        user must explicitly call write_coverage_data or get_coverage_data as
