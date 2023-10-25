@@ -1,9 +1,9 @@
 (library
  (name bisect_native)
  (modules bisect)
+ ; using private modules caused the build to panic, so the runtime was inlined instead
  ;(private_modules runtime)
  (wrapped false)
  (public_name bisect_ppx.runtime)
  (synopsis "Bisect_ppx runtime library (internal)")
- ;(wrapped false)
  (libraries bisect_ppx.common unix))
