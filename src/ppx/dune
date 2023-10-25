@@ -11,3 +11,13 @@
  (preprocess (pps ppxlib.metaquot))
  (flags (:standard -open Ocaml_shadow))
  (libraries bisect_ppx.common ppxlib str))
+
+(library
+ (name bisect_ppx_melange)
+ (public_name bisect_ppx.melange)
+ (kind ppx_rewriter)
+ (instrumentation.backend (ppx bisect_ppx))
+ (synopsis "Code coverage for OCaml")
+ (modules)
+ (ppx_runtime_libraries bisect_ppx.runtime_melange)
+ (libraries bisect_ppx))
